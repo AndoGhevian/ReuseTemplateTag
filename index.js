@@ -32,29 +32,4 @@ function reuseTemplateTag(tokens, ...values) {
     return compiler
 }
 
-let template = reuseTemplateTag`
-    - Hey ${1} How a\ure You?
-    - Are You ok ${1} ?
-    - Yes, thanks ${2}!
-`
-
-console.log(
-    template({
-        1: 'Joe',
-        2: 'Andy'
-    })
-)
-console.log(
-    template(['Joe', 'Molly', 'Susan'])
-)
-const violated = reuseTemplateTag`\u{}` // raw: 
-const notViolated = reuseTemplateTag`\u{0041}` // A
-console.log(
-    notViolated(),
-    notViolated.hasInvalidEscapeSequence
-)
-console.log(
-    violated(),
-    violated.hasInvalidEscapeSequence
-)
 module.exports = reuseTemplateTag

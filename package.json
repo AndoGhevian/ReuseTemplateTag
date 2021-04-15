@@ -1,0 +1,28 @@
+{
+  "name": "reuse-template-tag",
+  "version": "1.0.0",
+  "description": "Define Reusable String Templates within your code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndoGhevian/ReuseTemplateTag.git"
+  },
+  "keywords": [
+    "template",
+    "literal",
+    "string",
+    "reusable",
+    "filling",
+    "tag",
+    "reuse"
+  ],
+  "author": "Andranik Ghevondyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndoGhevian/ReuseTemplateTag/issues"
+  },
+  "homepage": "https://github.com/AndoGhevian/ReuseTemplateTag#readme"
+}
